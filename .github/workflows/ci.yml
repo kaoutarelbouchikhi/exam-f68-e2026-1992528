@@ -30,8 +30,8 @@ jobs:
 
       # Exécuter les tests
       - name: Run tests
-        run: pytest
+        run: PYTHONPATH=. pytest
 
       # Mesurer la couverture
       - name: Test coverage
-        run: pytest --cov=app
+        run: PYTHONPATH=. pytest --cov=app
